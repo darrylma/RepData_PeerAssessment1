@@ -9,6 +9,7 @@ by Darryl Ma
 
 
 ```r
+knitr::opts_chunk$set(fig.path = "./figures/")
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -53,7 +54,7 @@ hist(daily_steps$steps,
      breaks = seq(0, 25000, 1000))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](./figures/unnamed-chunk-3-1.png)<!-- -->
 
 ```r
 mean_daily_steps <- mean(daily_steps$steps, rm.na=TRUE)
@@ -75,7 +76,7 @@ with(interval_steps, plot(interval, steps,
     type = "l", lwd = 2))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](./figures/unnamed-chunk-4-1.png)<!-- -->
 
 ```r
 interval_max_steps <- interval_steps$interval[which.max(interval_steps$steps)]
@@ -119,7 +120,7 @@ hist(tidy_daily_steps$steps,
      ylim = range(c(0,20)), breaks = seq(0, 25000, 1000))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](./figures/unnamed-chunk-7-1.png)<!-- -->
 
 ```r
 mean_tidy_daily_steps <- mean(tidy_daily_steps$steps)
@@ -162,6 +163,6 @@ with(weekday_interval_steps, plot(interval, steps,
     main = "Weekday", type = "l", lwd = 2))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](./figures/unnamed-chunk-9-1.png)<!-- -->
 
 Based on the plots, we see that the individual's physical activity is more equally distributed throughout the waking hours of a weekend day (i.e. 7am until 8pm), where else on a weekday, majority of the individual's physical activity occurs before 10am. We can also deduce that on average this individual goes to bed around 9-10pm and wakes up around 5-6am everyday. 
