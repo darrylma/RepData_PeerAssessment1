@@ -164,4 +164,4 @@ with(weekday_interval_steps, plot(interval, steps,
 
 ![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
-Based on the plots, we see that the individual's physical activity is more equally distributed throughout the waking hours of a weekend day (i.e. 7am until 8pm), where else on a weekday, majority of the individual's physical activity occurs before 10am. We can also deduce that on average this individual goes to bed around 9-10pm everyday. 
+Based on the plots, we see that the individual's physical activity is more equally distributed throughout the waking hours of a weekend day (i.e. 7am until 8pm), where else on a weekday, majority of the individual's physical activity occurs before 10am. We can also deduce that on average this individual goes to bed around 9-10pm and wakes up around 5-6am everyday. 
